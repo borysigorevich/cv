@@ -1,8 +1,4 @@
-import {useEffect} from "react";
 import Head from 'next/head'
-import {useTheme} from 'next-themes'
-
-import {BsFillSunFill, BsFillMoonFill} from 'react-icons/bs'
 
 import {
     Courses,
@@ -18,11 +14,6 @@ import {
 } from "../components";
 
 export default function Index() {
-    const {theme, setTheme} = useTheme()
-
-    useEffect(() => {
-        setTheme('light')
-    }, [])
 
     return (
         <>
@@ -33,12 +24,12 @@ export default function Index() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <Header/>
-            <main className='md:py-6'>
+            <main className='md:py-6 dark:bg-body-dark'>
                 <div className='pb-16 md:pb-0 px-4 md:px-0 md:grid md:grid-cols-[2fr_4fr] md:gap-x-10
-                 max-w-[968px] mx-auto md:bg-container md:shadow-md'>
+                 max-w-[968px] mx-auto md:bg-container dark:md:bg-container-dark md:shadow-md'>
 
                     {/*resume left*/}
-                    <div className='md:bg-container-alt md:px-4'>
+                    <div className='md:bg-container-alt dark:md:bg-container-alt-dark md:px-4'>
                         <Home/>
                         <Skills/>
                         <Profile/>

@@ -1,13 +1,13 @@
 import React from 'react';
 
 const skillName = 'relative before:w-[5px] before:h-[5px] before:bg-[#403a3a] ' +
-    'before:rounded-full before:absolute before:-left-4 before:top-1/2 before:-translate-y-1/2'
+    'before:rounded-full before:absolute before:-left-4 before:top-1/2 before:-translate-y-1/2 dark:text-base-dark'
 
 export const Skills = () => {
     return (
         <section className='pb-6'>
             <h2 className='text-3xl text-center md:text-start mb-6 relative before:absolute before:-bottom-2
-            before:h-1 before:w-10 before:rounded before:bg-[#0b0a0a]'>Skills</h2>
+            before:h-1 before:w-10 before:rounded before:bg-[#0b0a0a] dark:before:bg-before-dark dark:text-title-dark'>Skills</h2>
 
             {/*<div className='text-light'>*/}
             <div className='grid grid-cols-2 gap-3 text-light px-6 gap-x-16'>
