@@ -31,11 +31,12 @@ export default function Index() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <Header/>
-            <main>
-                <div className='pb-16 px-4 md:grid md:grid-cols-[2fr_4fr] md:gap-x-10 max-w-[968px] mx-auto md:pt-6'>
+            <main className='md:py-6'>
+                <div className='pb-16 md:pb-0 px-4 md:px-0 md:grid md:grid-cols-[2fr_4fr] md:gap-x-10
+                 max-w-[968px] mx-auto md:bg-container md:shadow-md'>
 
                     {/*resume left*/}
-                    <div className="max-w-[968px] mx-auto">
+                    <div className='md:bg-container-alt md:px-4'>
                         <Home/>
                         <Profile/>
                         <Education/>
@@ -43,7 +44,7 @@ export default function Index() {
                     </div>
 
                     {/*resume right*/}
-                    <div>
+                    <div className='md:py-6'>
                         <Experience/>
                         <Courses/>
                         <Languages/>
