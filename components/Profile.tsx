@@ -8,7 +8,7 @@ export const Profile = () => {
             <p className='dark:text-base-dark'>
                 Hi, I am a frontend developer from Ukraine. I love programming, developing, learning and problem
                 solving.
-                I am passionate about React, taking risks and solving them by Communication & Sharing experience and
+                I am passionate about React, taking risks and solving them by communication & sharing experience and
                 knowledge.
             </p>
         </section>

@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useCallback} from 'react';
+import React, {useEffect, useState} from 'react';
 
 import {BsArrowUp} from 'react-icons/bs'
 
@@ -15,8 +15,6 @@ export const ScrollTop = () => {
 
         return () => window.removeEventListener('scroll', listener)
     }, [])
-
-    console.log(showScrollToTop)
 
     return (
         <div

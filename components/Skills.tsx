@@ -6,7 +6,7 @@ const skillName = 'relative before:w-[5px] before:h-[5px] before:bg-[#403a3a] ' 
 
 export const Skills = () => {
     return (
-        <section className='pb-6'>
+        <section className='pb-6' id='skills'>
             <h2 className='text-3xl text-center md:text-start mb-6 relative before:absolute before:-bottom-2
             before:h-1 before:w-10 before:rounded before:bg-[#0b0a0a] dark:before:bg-before-dark dark:text-title-dark'>Skills</h2>
 

@@ -15,7 +15,7 @@ export const Experience = () => {
                     </div>
 
                     <div className='grid gap-2'>
-                        <h3 className='text-2xl'>Junior React Developer</h3>
+                        <h3 className='text-xl'>Junior React Developer</h3>
                         <span
                             className='text-light dark:text-base-dark'>From Oct 2021 to March 2022 (6 months) | AXCEL</span>
                         <p className='text-light'>
@@ -33,7 +33,7 @@ export const Experience = () => {
                     </div>
 
                     <div className='grid gap-2'>
-                        <h3 className='text-2xl'>Compliance Officer</h3>
+                        <h3 className='text-xl'>Compliance Officer</h3>
                         <span className='text-light dark:text-base-dark'>From Oct 2017 to Nov 2020 | CEX.IO</span>
                         <p className='text-light'>
                             Verification of new clients. Double check approved users for malicious behaviour.
@@ -48,7 +48,7 @@ export const Experience = () => {
                     </div>
 
                     <div className='grid gap-2'>
-                        <h3 className='text-2xl'>JavaScript Developer</h3>
+                        <h3 className='text-xl'>JavaScript Developer</h3>
                         <span className='text-light dark:text-base-dark'>From Nov 2020 to May 2022 (1 year 6 months) | CEX.IO</span>
                         <p className='text-light'>Program internal verification system. Analyze users' data and create
                             new rules for verification system.</p>
@@ -62,7 +62,7 @@ export const Experience = () => {
                     </div>
 
                     <div className='grid gap-2'>
-                        <h3 className='text-2xl'>React Developer</h3>
+                        <h3 className='text-xl'>React Developer</h3>
                         <span
                             className='text-light dark:text-base-dark'>From Jun 2022 to Dec 2022 (7 months) | CEX.IO</span>
                         <p className='text-light'>
