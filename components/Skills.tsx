@@ -1,7 +1,8 @@
 import React from 'react';
 
 const skillName = 'relative before:w-[5px] before:h-[5px] before:bg-[#403a3a] ' +
-    'before:rounded-full before:absolute before:-left-4 before:top-1/2 before:-translate-y-1/2 dark:text-base-dark'
+    'before:rounded-full before:absolute before:-left-4 before:top-1/2 before:-translate-y-1/2 dark:text-base-dark ' +
+    'dark:before:bg-[#bfbfbf]'
 
 export const Skills = () => {
     return (
@@ -22,6 +23,7 @@ export const Skills = () => {
                 <div className={skillName}>Mui 5</div>
                 <div className={skillName}>Tailwind</div>
                 <div className={skillName}>Three.js</div>
+                <div className={skillName}>Git</div>
             </div>
 
             {/*<div className='grid gap-3'>*/}

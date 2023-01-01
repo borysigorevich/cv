@@ -17,8 +17,8 @@ export const Header = () => {
         setShowMenu(false)
     }
 
-    const linkStyle = (section: string) => `flex flex-col items-center text-sm hover:text-title 
-    gap-2 ${section === activeSection ? 'text-title' : 'text-light'}`
+    const linkStyle = (section: string) => `flex flex-col items-center text-sm hover:text-title dark:hover:text-title-dark
+    gap-2 ${section === activeSection ? 'text-title dark:text-title-dark' : 'text-light dark:text-base-dark'}`
 
     useEffect(() => {
         const section = localStorage.getItem('section')
@@ -26,16 +26,16 @@ export const Header = () => {
     }, [])
 
     return (
-        <header className=" w-full fixed z-10 bottom-0 left-0 bg-body shadow-md text-black transition px-4 md:hidden">
+        <header className=" w-full fixed z-10 bottom-0 left-0 bg-body dark:bg-body-dark shadow-[2px_0_3px_#d5cccc] text-black transition px-4 md:hidden">
 
             <nav className="h-12 flex justify-between items-center">
-                <Link href='#' className="text-title">
+                <Link href='#' className="text-title dark:text-title-dark">
                     Boris
                 </Link>
 
                 <div
                     className={`fixed ${showMenu ? 'bottom-[48px]' : '-bottom-full'} w-full left-0 py-8 px-6 bg-body shadow-md z-10 rounded-tr
-                     rounded-br grid grid-cols-3 gap-8 transition-all duration-300`}>
+                     rounded-br grid grid-cols-3 gap-8 transition-all duration-300 dark:bg-container-dark`}>
                     <Link href="#home" className={linkStyle('home')} onClick={closeMenu('home')}>
                         <AiFillHome/> Home
                     </Link>
@@ -65,7 +65,7 @@ export const Header = () => {
                     {/*</Link>*/}
                 </div>
 
-                <div className="text-title cursor-pointer text-xl" onClick={toggleMenu}>
+                <div className="text-title cursor-pointer text-xl dark:text-title-dark" onClick={toggleMenu}>
                     <BsFillGridFill/>
                 </div>
             </nav>

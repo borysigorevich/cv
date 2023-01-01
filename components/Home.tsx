@@ -11,20 +11,27 @@ export const Home = () => {
     const {theme, setTheme} = useTheme()
 
     useEffect(() => {
-        setTheme('dark')
+        const theme = localStorage.getItem('theme')
+        theme && setTheme(theme)
     }, [])
 
     const changeTheme = () => {
-        if(theme === 'dark') setTheme('light')
-        else setTheme('dark')
+        if (theme === 'dark') {
+            setTheme('light')
+            localStorage.setItem('theme', 'light')
+        }
+        else {
+            setTheme('dark')
+            localStorage.setItem('theme', 'dark')
+        }
     }
 
     return (
         <section id="home" className='py-6 relative'>
 
             {theme === 'dark'
-                ? <BsFillSunFill onClick={changeTheme} className='absolute top-4 right-4'/>
-                : <BsFillMoonFill onClick={changeTheme} className='absolute top-4 right-4'/>
+                ? <BsFillSunFill onClick={changeTheme} className='absolute top-4 right-4 cursor-pointer'/>
+                : <BsFillMoonFill onClick={changeTheme} className='absolute top-4 right-4 cursor-pointer'/>
             }
 
             <div className='grid gap-6'>
@@ -34,7 +41,7 @@ export const Home = () => {
                         alt='my photo'
                         width={175}
                         height={175}
-                        className="mx-auto mb-4 rounded-full aspect-square"
+                        className="mx-auto mb-4 rounded-full"
                     />
                     <h1 className="text-3xl dark:text-title-dark">Boris Kutsenko</h1>
                     <h3 className='text-xl dark:text-base-dark'>React Developer</h3>

@@ -21,7 +21,7 @@ export const ScrollTop = () => {
     return (
         <div
             className={`fixed ${showScrollToTop ? 'bottom-[82px]' : '-bottom-full'} right-[16px] grid place-content-center 
-            bg-container-alt p-[4.8px] rounded transition-all duration-300 cursor-pointer md:hidden`}
+            bg-container-alt p-[4.8px] rounded transition-all duration-300 cursor-pointer md:hidden dark:bg-container-alt-dark dark:text-title-dark`}
             onClick={scrollToTop}
         >
             <BsArrowUp/>
