@@ -2,6 +2,8 @@ import {useEffect} from "react";
 import Head from 'next/head'
 import {useTheme} from 'next-themes'
 
+import {BsFillSunFill, BsFillMoonFill} from 'react-icons/bs'
+
 import {
     Courses,
     Education,
@@ -38,9 +40,9 @@ export default function Index() {
                     {/*resume left*/}
                     <div className='md:bg-container-alt md:px-4'>
                         <Home/>
+                        <Skills/>
                         <Profile/>
                         <Education/>
-                        <Skills/>
                     </div>
 
                     {/*resume right*/}
