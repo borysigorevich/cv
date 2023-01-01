@@ -20,7 +20,7 @@ export const Home = () => {
                     <h3 className='text-xl'>React Developer</h3>
                 </div>
 
-                <div className='grid gap-3'>
+                <div className='grid gap-3 mx-auto'>
                     <div className="flex gap-2 items-center text-light">
                         <AiTwotoneMail/> <span>borysigorevich@gmail.com</span>
                     </div>

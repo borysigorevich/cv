@@ -30,29 +30,9 @@ export default function Index() {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            {/*<main className="h-full flex justify-center items-center">*/}
             <Header/>
             <main>
-                {/*<div className="max-w-[968px] mx-auto bg-body">*/}
-                {/*    <Header/>*/}
-                {/*    <h1 className="text-text-light">fff</h1>*/}
-                {/*</div>*/}
-                {/*<div*/}
-                {/*    className="relative w-full max-w-[1000px] h-[calc(100%-80px)] bg-white grid grid-cols-[1fr_2fr] shadow-lg">*/}
-
-                {/*    <div className="relative bg-[#003143] p-10 ">*/}
-                {/*        <div>*/}
-                {/*            <div className="w-20 h-20 bg-white rounded-full mb-5"/>*/}
-                {/*            <h2>Boris Kutsenko<br/><span>React Developer</span></h2>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-
-                {/*    <div className="relative bg-white p-10">*/}
-
-                {/*    </div>*/}
-                {/*</div>*/}
-                <div className='pb-16 px-4 md:grid md:grid-cols-[2fr_4fr] md:gap-x-10 max-w-[968px] mx-auto'>
-
+                <div className='pb-16 px-4 md:grid md:grid-cols-[2fr_4fr] md:gap-x-10 max-w-[968px] mx-auto md:pt-6'>
 
                     {/*resume left*/}
                     <div className="max-w-[968px] mx-auto">
