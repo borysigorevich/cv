@@ -34,6 +34,8 @@ export const Home = () => {
                 : <BsFillMoonFill onClick={changeTheme} className='absolute top-4 right-4 cursor-pointer'/>
             }
 
+            {/*<a href='/CV.pdf' download>download</a>*/}
+
             <div className='grid gap-6'>
                 <div className="text-center">
                     <Image
@@ -41,7 +43,7 @@ export const Home = () => {
                         alt='my photo'
                         width={175}
                         height={175}
-                        className="mx-auto mb-4 rounded-full"
+                        className="mx-auto mb-4 rounded-full object-cover aspect-square"
                     />
                     <h1 className="text-3xl dark:text-title-dark">Boris Kutsenko</h1>
                     <h3 className='text-xl dark:text-base-dark'>React Developer</h3>

@@ -1,6 +1,33 @@
 import React from 'react';
 
 export const Experience = () => {
+
+    const a = {
+        x: 1
+    }
+
+    // @ts-ignore
+    a.y = a
+
+    // console.log(JSON.stringify(a))
+
+    const arr = [1, 2, 3, 4, 5]
+    delete arr[1]
+    console.log(arr.length)
+    console.log(arr)
+
+    let str = 'hello!!world'
+
+    const isLetter = (c: string) => c.toLowerCase() !== c.toUpperCase()
+
+    // @ts-ignore
+    const letters = [...str].filter(c => isLetter(c))
+    // @ts-ignore
+    const result = [...str].map(c => isLetter(c) ? letters.pop() : c).join('')
+
+    console.log(result)
+
+
     return (
         <section id="experience" className='pb-6'>
             <h2 className='text-3xl text-center mb-6 relative before:absolute before:-bottom-2
@@ -66,7 +93,8 @@ export const Experience = () => {
                         <span
                             className='text-light dark:text-base-dark'>From Jun 2022 to Dec 2022 (7 months) | CEX.IO</span>
                         <p className='text-light'>
-                            Maintain and refactor old code. Create a lot of public landing pages using JavaScript, React,
+                            Maintain and refactor old code. Create a lot of public landing pages using JavaScript,
+                            React,
                             SCSS. Add new features.
                         </p>
                     </div>
