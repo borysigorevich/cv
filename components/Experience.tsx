@@ -13,15 +13,13 @@ export const Experience = () => {
 
     const arr = [1, 2, 3, 4, 5]
     delete arr[1]
-    console.log(arr.length)
-    console.log(arr)
 
     let str = 'hello!!world'
 
     const isLetter = (c: string) => c.toLowerCase() !== c.toUpperCase()
 
     // @ts-ignore
-    const letters = [...str].filter(c => isLetter(c))
+    const letters = [...str].filter(isLetter)
     // @ts-ignore
     const result = [...str].map(c => isLetter(c) ? letters.pop() : c).join('')
 

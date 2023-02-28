@@ -22,6 +22,9 @@ module.exports = {
         'container-alt': '#f0efef',
         'container-alt-dark': '#181616',
         'before-dark': '#bfbfbf'
+      },
+      animation: {
+        'spin-slow': 'spin 6s linear infinite'
       }
     },
 
