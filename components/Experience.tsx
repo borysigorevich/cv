@@ -16,15 +16,12 @@ export const Experience = () => {
 
     let str = 'hello!!world'
 
-    const isLetter = (c: string) => c.toLowerCase() !== c.toUpperCase()
-
+    const isLetters = (c: string) => c.toLowerCase() !== c.toUpperCase()
     // @ts-ignore
-    const letters = [...str].filter(isLetter)
+    const letters = [...str].filter(isLetters)
     // @ts-ignore
-    const result = [...str].map(c => isLetter(c) ? letters.pop() : c).join('')
-
+    const result = [...str].map(c => isLetters(c) ? letters.pop() : c).join('')
     console.log(result)
-
 
     return (
         <section id="experience" className='pb-6'>
