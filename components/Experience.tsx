@@ -21,6 +21,7 @@ export const Experience = () => {
     const letters = [...str].filter(isLetters)
     // @ts-ignore
     const result = [...str].map(c => isLetters(c) ? letters.pop() : c).join('')
+
     console.log(result)
 
     return (
