@@ -53,17 +53,17 @@ const Slider = () => {
 
                 <div className='absolute bottom-[50px] left-1/2 -translate-x-1/2 flex gap-[10px] z-50'>
                     <label
-                        className={`${radio === 'web' ? 'opacity-100 w-[50px]' : 'opacity-50'} w-5 h-5 rounded-full 
+                        className={`${radio === 'web' ? 'opacity-100 w-[50px]' : 'opacity-50 w-5'} h-5 rounded-full 
                         bg-white transition-all duration-500 cursor-pointer`}
                         htmlFor="web"
                     ></label>
                     <label
-                        className={`${radio === 'graphics' ? 'opacity-100 w-[50px]' : 'opacity-50'} w-5 h-5 rounded-full 
+                        className={`${radio === 'graphics' ? 'opacity-100 w-[50px]' : 'opacity-50 w-5'} h-5 rounded-full 
                         bg-white transition-all duration-500 cursor-pointer`}
                         htmlFor="graphics"
                     ></label>
                     <label
-                        className={`${radio === 'photography' ? 'opacity-100 w-[50px]' : 'opacity-50'} w-5 h-5 rounded-full 
+                        className={`${radio === 'photography' ? 'opacity-100 w-[50px]' : 'opacity-50 w-5'} h-5 rounded-full 
                         bg-white transition-all duration-500 cursor-pointer`}
                         htmlFor="photography"
                     ></label>
