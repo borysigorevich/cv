@@ -65,7 +65,7 @@ const Nav = () => {
                         `} 
                     absolute bg-white rounded-full cursor-pointer transition-all grid place-items-center duration-500
                     before:absolute before:w-[30px] before:h-[3px] before:rounded-[3px] before:transition-[transform,background] before:duration-500
-                    after:absolute after:w-[30px] after:h-[3px] after:bg-[#333] after:rounded-[3px] after:translate-y-[5px] after:transition-all after:duration-500
+                    after:absolute after:w-[30px] after:h-[3px] after:rounded-[3px] after:transition-all after:duration-500
                     `}
                     onClick={() => setIsToggleMenuActive(state => !state)}
                 />
