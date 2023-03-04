@@ -8,15 +8,15 @@ import Tilt from 'react-parallax-tilt';
 const Glassmorphism = () => {
     const cardRef = useRef<HTMLDivElement | null>(null)
 
-    // useEffect(() => {
-    //     VanillaTilt.init(cardRef.current!, {
-    //         max: 15,
-    //         speed: 100,
-    //         glare: true,
-    //         transition: true
-    //     })
-    //
-    // }, [])
+    useEffect(() => {
+        VanillaTilt.init(cardRef.current!, {
+            max: 15,
+            speed: 100,
+            glare: true,
+            transition: true
+        })
+
+    }, [])
 
     return (
         <div className='h-full w-full grid place-content-center relative'>
@@ -25,8 +25,8 @@ const Glassmorphism = () => {
                 fill
                 alt='bg'
             />
-            <Tilt className='[transform-style:preserve-3d]' glareEnable tiltMaxAngleX={15} tiltMaxAngleY={15} transitionSpeed={100}>
-                <div className='relative rounded-[20px] [transform-style:preserve-3d] group'>
+            {/*<Tilt className='[transform-style:preserve-3d] rounded-[20px]' glareEnable tiltMaxAngleX={15} tiltMaxAngleY={15} transitionSpeed={100}>*/}
+                <div className='relative rounded-[20px] [transform-style:preserve-3d] group' ref={cardRef}>
                     <div
                         className='relative w-[300px] min-h-[400px] bg-[rgba(255,255,255,0.1)] backdrop-blur-[10px]
                     border border-[rgba(255,255,255,0.5)]
@@ -100,7 +100,7 @@ const Glassmorphism = () => {
                         </p>
                     </div>
                 </div>
-            </Tilt>
+            {/*</Tilt>*/}
 
         </div>
     );
